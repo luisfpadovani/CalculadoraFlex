@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FormActivity">
+
+    <ImageView style="@style/banner" />
+
+    <View style="@style/divider" />
+
+    <TextView
+        style="@style/header_title"
+        android:drawableLeft="@drawable/gas_station_icon"
+        android:text="Posto de Gasolina" />
+
+    <View style="@style/divider" />
+
+    <LinearLayout style="@style/container_row">
+
+        <TextView
+            style="@style/header_subtitle"
+            android:text="Preço Gasolina" />
+
+        <TextView
+            style="@style/header_subtitle"
+            android:text="Preço Etanol" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/container_row">
+
+        <EditText
+            style="@style/input_number_decimal"
+            android:hint="Ex. 3.5" />
+
+        <EditText
+            style="@style/input_number_decimal"
+            android:hint="Ex. 2.5" />
+    </LinearLayout>
+
+</LinearLayout>
